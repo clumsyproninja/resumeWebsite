@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    background-color: #dfdfdf;
+    background-color: #2c2c2c;
     transition: opacity 0.5s;
     min-height: 100vh;
 }
@@ -104,4 +104,24 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.container{
+    display: grid;
+    max-width: 10em;
+}
+
+.content {
+    grid-column: 2;
+    text-align: center;
+}
+
+#about-head{
+    padding: 5px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
 }
