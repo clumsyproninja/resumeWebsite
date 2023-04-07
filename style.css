@@ -108,7 +108,8 @@ footer{
 
 .container{
     display: grid;
-    max-width: 10em;
+    max-width: 116em;
+    justify-content: space-around;
 }
 
 .content {
@@ -116,12 +117,33 @@ footer{
     text-align: center;
 }
 
-#about-head{
-    padding: 5px;
-    margin: 5px;
+#about-title,
+#about-info{
+    
     background-color: #f4f4f4;
     color: black;
     text-align: center;
     position: relative;
     border-radius: 10px;
+}
+
+#about-title{
+    padding: .2em;
+    margin: .5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    max-width: 25%;
+    align-items: center;
+}
+
+#about-tcenter{
+    padding-left: 50em;
+}
+
+#about-info{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
