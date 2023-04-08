@@ -4,7 +4,7 @@
 body {
     margin: 0;
     background-color: #2c2c2c;
-    min-height: 110vh;
+    min-height: 100vh;
 }
 
 .textColor {
@@ -88,8 +88,6 @@ nav a.active{
     }
 }
 
-
-
 footer{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -146,7 +144,7 @@ aside {
     position: relative;
 }
 
-aside img{
+#author{
     width: 20em;
     height: 15em;
     border-radius: 30px;
