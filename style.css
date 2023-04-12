@@ -37,7 +37,7 @@ header section{
     padding-left: 10px;
 }
 
-header section h1{
+.header-title{
     color: white;
     font-family: 'Spinnaker', sans-serif;
     font-size: 18px;
@@ -53,13 +53,20 @@ header section h1{
     padding-top: 5px;
 }
 
-nav {
+nav{
     float: right;
     display: inline;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
 }
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+
+nav li{display: inline-block;}
 
 nav a{
     display: inline-block;
@@ -105,8 +112,9 @@ footer{
 
 .container{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2em;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 6em;
 }
 
 .box{
@@ -116,11 +124,12 @@ footer{
     border-radius: 10px;
 }
 
-#title{
+.title{
     padding: .2em;
     margin: .2em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
+    justify-self: center;
 }
 
 #info{
@@ -132,19 +141,25 @@ footer{
     grid-column: 1 / span 1;
 }
 
+article strong{
+    font-size: 3em;
+}
+
 aside{
     font-style: italic;
     background-color: lightgray;
     position: relative;
-    width: 20.5em;
     padding-left: 10px;
     margin-left: 10px;
+    width: fit-content;
+    height: fit-content;
     grid-column: 2 / span 1;
 }
 
 #author{
     width: 20em;
     height: 15em;
+    margin: 1em;
     border-radius: 30px;
     image-rendering: optimizeQuality;
 }
