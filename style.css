@@ -9,11 +9,15 @@
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
 
-#home{
+#home-BGC{
     background-color: #2f4256;
 }
 
@@ -47,21 +51,21 @@ header section{
     letter-spacing: .2em;
 }
 
-nav{
+.top-nav{
     float: right;
     display: inline;
     text-align: center;
 }
 
-nav ul{
+.top-nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav li{display: inline-block;}
+.top-nav li{display: inline-block;}
 
-nav a{
+.top-nav a{
     display: inline-block;
     border-radius: 10px;
     color: #f6f6f6;
@@ -71,11 +75,11 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+.top-nav a:hover{
     background-color: #003f66;
 }
 
-nav a.active{
+.top-nav a.active{
     background-color: #003f66;
 }
 
@@ -92,37 +96,47 @@ nav a.active{
     background-image: url(./assets/homeBG.jpg);
 }
 
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 .captitle{
     position: absolute;
     top: 30vh;
     width: 100%;
     text-align: center;
+    opacity: 0;
+    animation: fade 5s ease forwards;
 }
 
 .captitle span.border{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     color: #fff;
-    border: 5px solid #f1f1f1;
+    border: 4px solid #f1f1f1;
     font-family: 'Kanit', sans-serif;
     font-size: 2.5em;
     padding: 20px;
-}
-
-.divider{
-    margin: 0;
+    white-space: nowrap;
 }
 
 #main-sect{
     min-height: 40vh;
 }
 
-#about-sect{
-    background-color: teal;
-    min-height: 40vh;
+#about{
+    background-color: #008080;
+    min-height: 80vh;
 }
 
-.container{
+#contact{
+    /* fix gap between about and contact */
+    background-color: #BCADF0;
+    min-height: 80vh;
+}
+
+/* .container{
     display: grid;
     grid-template-columns: auto 1fr;
 }
@@ -146,18 +160,29 @@ nav a.active{
     font-size: xx-large;
     text-align: center;
     justify-self: center;
-}
+} */
 
 .main-info{
     text-align: center;
-    background-color: #f6f6f6;
-    color: black;
+    color: #f6f6f6;
     border-radius: 5px;
-    margin: 15px;
+    margin: 15px auto;
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #000;
     width: fit-content;
+}
+
+#home-nav{
+    margin: 4.5vh auto;
+    width: 25%;
+    min-height: 25vh;
+    border: 10px ridge #000;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #75BAFF;
+    text-align: center;
 }
 
 #about-info{
