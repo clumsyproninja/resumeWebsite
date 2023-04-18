@@ -66,7 +66,7 @@ nav a{
     border-radius: 10px;
     color: #f6f6f6;
     padding: 16px 30px;
-    font-size: 18px;
+    font-size: 0.75em;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
 }
@@ -105,13 +105,21 @@ nav a.active{
     color: #fff;
     border: 5px solid #f1f1f1;
     font-family: 'Kanit', sans-serif;
-    font-size: 44px;
+    font-size: 2.5em;
     padding: 20px;
 }
 
-#divider{
-    width: 100%;
-    height: 2vh;
+.divider{
+    margin: 0;
+}
+
+#main-sect{
+    min-height: 40vh;
+}
+
+#about-sect{
+    background-color: teal;
+    min-height: 40vh;
 }
 
 .container{
@@ -145,7 +153,8 @@ nav a.active{
     background-color: #f6f6f6;
     color: black;
     border-radius: 5px;
-    margin: auto;
+    margin: 15px;
+    padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     width: fit-content;
@@ -185,11 +194,11 @@ aside h1{font-size: xx-large;}
 footer{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: #f6f6f6;
+    font-size: 1em;
+    color: #f8f8f8;
     background-color: #0A397F;
     padding: 1.5%;
-    margin-top: 5vh;
+    margin-top: 2vh;
     bottom: 0;
     width: 100%;
     box-shadow: 0px 0px 16px 2.5px #0A397F;
