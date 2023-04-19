@@ -58,6 +58,10 @@ header section{
     margin: 10px auto;
 }
 
+.top-nav-alt{
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+
 .top-nav a{
     border-radius: 10px;
     color: #FFF;
@@ -169,9 +173,9 @@ header section{
     background-color: #99ccff;
 }
 
-#aboutBG{
+.aboutBG{
     background-image: url(./assets/aboutBG.jpg);
-    min-height: 45vh;
+    min-height: 60vh;
     /* parallax effect */
     background-attachment: fixed;
     background-repeat: no-repeat;
