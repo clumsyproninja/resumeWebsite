@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @media only screen and (max-width: 600px) {
     header{
         float: none;
@@ -83,6 +84,7 @@ header section{
     background-color: #003f66;
 }
 
+
 .introIMG{
     margin: 0;
     min-height: 100vh;
@@ -107,7 +109,7 @@ header section{
     width: 100%;
     text-align: center;
     opacity: 0;
-    animation: fade 5s ease forwards;
+    animation: fade 4s ease forwards;
 }
 
 .captitle span.border{
@@ -127,7 +129,14 @@ header section{
 
 #about{
     background-color: #008080;
+    color: #f6f6f6;
     min-height: 80vh;
+}
+
+#about h1{
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    padding: 20;
 }
 
 #contact{
@@ -135,32 +144,6 @@ header section{
     background-color: #BCADF0;
     min-height: 80vh;
 }
-
-/* .container{
-    display: grid;
-    grid-template-columns: auto 1fr;
-}
-
-.box,
-.title{
-    width: fit-content;
-    background-color: #f6f6f6;
-    color: black;
-    border-radius: 10px;
-}
-
-.box{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.title{
-    margin: 0.5em auto;
-    padding: 0.7%;
-    font-family: 'Kanit', sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    justify-self: center;
-} */
 
 .main-info{
     text-align: center;
@@ -175,14 +158,40 @@ header section{
 }
 
 #home-nav{
-    margin: 4.5vh auto;
-    width: 25%;
+    margin: 3.5vh auto;
+    width: 30%;
     min-height: 25vh;
     border: 10px ridge #000;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
     background-color: #75BAFF;
     text-align: center;
+    display: grid;
+}
+
+#home-nav ul{
+    width: fit-content;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+#home-nav li{display: grid;margin: 10px auto;}
+
+#home-nav a{
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 10px;
+    color: #000;
+    padding: 20px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#home-nav a:hover{
+    background-color: #99ccff;
 }
 
 #about-info{
