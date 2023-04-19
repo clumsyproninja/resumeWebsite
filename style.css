@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@media only screen and (max-width: 600px) {
-    header{
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 
 html{
     scroll-behavior: smooth;
@@ -54,20 +47,17 @@ header section{
 
 .top-nav{
     float: right;
-    display: inline;
     text-align: center;
 }
 
 .top-nav ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
 }
 
-.top-nav li{display: inline-block;}
-
 .top-nav a{
-    display: inline-block;
     border-radius: 10px;
     color: #f6f6f6;
     padding: 16px 30px;
@@ -83,7 +73,6 @@ header section{
 .top-nav a.active{
     background-color: #003f66;
 }
-
 
 .introIMG{
     margin: 0;
@@ -124,41 +113,25 @@ header section{
 }
 
 #main-sect{
-    min-height: 40vh;
+    min-height: 45vh;
 }
 
-#about{
-    background-color: #008080;
-    color: #f6f6f6;
-    min-height: 80vh;
-}
-
-#about h1{
-    text-align: center;
-    font-family: 'Karla', sans-serif;
-    padding: 20;
-}
-
-#contact{
-    /* fix gap between about and contact */
-    background-color: #BCADF0;
-    min-height: 80vh;
-}
-
-.main-info{
-    text-align: center;
-    color: #f6f6f6;
-    border-radius: 5px;
-    margin: 15px auto;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.title-format{
+    margin: auto;
+    padding: 20px 5px 5px 5px;
+    font-family: 'Karla',sans-serif;
     font-size: 2em;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 4px 8px #000;
     width: fit-content;
 }
 
+#main-info{
+    color: #f6f6f6;
+    border-radius: 5px;
+}
+
 #home-nav{
-    margin: 3.5vh auto;
+    margin: 20px auto;
     width: 30%;
     min-height: 25vh;
     border: 10px ridge #000;
@@ -166,19 +139,20 @@ header section{
     border-bottom-right-radius: 75px;
     background-color: #75BAFF;
     text-align: center;
-    display: grid;
 }
 
 #home-nav ul{
-    width: fit-content;
+    width: 40%;
     list-style: none;
-    margin: auto;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 20px auto;
 }
 
-#home-nav li{display: grid;margin: 10px auto;}
-
 #home-nav a{
+    display: block;
     border-style: inset;
     border-width: 5px;
     border-radius: 10px;
@@ -194,35 +168,17 @@ header section{
     background-color: #99ccff;
 }
 
-#about-info{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 0 5%;
-    margin: 0 2%;
-    grid-column: 1 / span 1;
+#about{
+    background-color: #008080;
+    color: #f6f6f6;
+    min-height: 40vh;
 }
 
-article strong{
-    font-size: 3em;
-}
-
-aside{
-    font-style: italic;
-    text-align: center;
-    background-color: lightgray;
-    position: relative;
-    margin-right: 1vw;
-    width: fit-content;
-    height: fit-content;
-    grid-column: 2 / span 1;
-}
-
-aside h1{font-size: xx-large;}
-
-#author{
-    width: 20em;
-    margin: 1em 1em auto 1em;
-    border-radius: 30px;
-    image-rendering: optimizeQuality;
+#contact{
+    /* fix gap between about and contact */
+    background-color: hsl(253, 69%, 38%);
+    color: #f6f6f6;
+    min-height: 40vh;
 }
 
 footer{
