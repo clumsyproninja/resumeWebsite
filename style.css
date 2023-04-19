@@ -192,10 +192,51 @@ header section{
     border: 5px double #000;
 }
 
+#about-desc strong{
+    font-weight: normal;
+}
+
 #contact{
-    background-color: #3b1ea4;
-    color: #FFF;
+    background-color: #a9e3ef;
+    color: #000;
     min-height: 40vh;
+}
+
+#contact-title{
+    text-shadow: 2px 2px 20px #187081 !important;
+}
+
+#contact-info{
+    height: 20px;
+    text-align: center;
+    display: grid;
+    gap: 2px;
+    padding: 5px;
+    grid-template: 75px 75px / 1fr 1fr 1fr;
+}
+
+#contact-info *{
+    margin: 5px auto 0;
+    padding: 15px 0;
+    font-size: 1.4em;
+    font-family: 'Kanit', sans-serif;
+}
+
+#contact-info p,
+#contact-info a{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto !important;
+    font-size: 1.1em !important;
+    padding: 0px 0.5%;
+}
+
+.contact-links{
+    font-family: 'Spinnaker', sans-serif !important;
+    background-color: hsl(190, 69%, 76%);
+    color: #000;
+    border-radius: 10px;
+    border: 5px solid #000;
+    text-decoration: none;
 }
 
 footer{
