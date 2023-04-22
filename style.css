@@ -203,7 +203,7 @@ header section{
 #contact{
     background-color: #a9e3ef;
     color: #000;
-    min-height: 35vh;
+    min-height: 32vh;
 }
 
 #contact-title{
@@ -234,13 +234,18 @@ header section{
     padding: 0px 0.5%;
 }
 
-.contact-links{
+#contact-info a{
+    padding-top: 5px;
     font-family: 'Spinnaker', sans-serif !important;
-    background-color: hsl(190, 69%, 76%);
     color: #000;
+    max-height: 5vh;
     border-radius: 10px;
-    border: 5px solid #000;
+    border: 4px solid #000;
     text-decoration: none;
+}
+
+#contact-info a:hover{
+    background-color: hsl(190, 69%, 73%);
 }
 
 footer{
