@@ -4,20 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-/* Mobile */
-@media (max-width: 480px) {
-    #contact{
-        min-height: 100vh;
-    }
-}
-
-/* tablets */
-@media (max-width: 768px){
-    #contact{
-        min-height: 44vh;
-    }
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -219,7 +205,6 @@ header section{
     color: #000;
     min-height: 32vh;
 }
-
 
 #contact-title{
     text-shadow: 2px 2px 20px #187081 !important;
