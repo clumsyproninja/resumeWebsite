@@ -1,2 +1,2 @@
 # programming-passion
- This repo includes my website for Fundamental web dev class with HTML and CSS
+ This repo includes my website I will use as my portfolio
