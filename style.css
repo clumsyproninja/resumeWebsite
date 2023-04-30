@@ -40,10 +40,10 @@ header section{
 .header-title{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
-    font-size: 18px;
-    line-height: 1.2em;
-    margin-left: 3.5em;
-    letter-spacing: .2em;
+    font-size: 26px;
+    line-height: 5px;
+    margin-left: 3em;
+    letter-spacing: .18em;
 }
 
 .top-nav{
@@ -102,7 +102,6 @@ header section{
     top: 30vh;
     width: 100%;
     text-align: center;
-    opacity: 0;
     animation: fade 4s ease forwards;
 }
 
@@ -142,12 +141,12 @@ header section{
     border: 10px ridge #000;
     border-top-left-radius: 75px;
     border-bottom-right-radius: 75px;
-    background-color: #75BAFF;
+    background-color: hsl(210, 100%, 76%);
     text-align: center;
 }
 
 #home-nav ul{
-    width: 40%;
+    width: 45%;
     list-style: none;
     padding: 0;
     display: grid;
