@@ -92,6 +92,11 @@ header section{
     min-height: 100vh;
 }
 
+#projectsBG{
+    background-image: url(./assets/projectsBG.jpg);
+    min-height: 100vh;
+}   
+
 @keyframes fade {
     from{opacity: 0;}
     to{opacity: 1;}
@@ -163,7 +168,7 @@ header section{
     color: #000;
     padding: 20px 10px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
 }
