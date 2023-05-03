@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+@keyframes fade {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -16,10 +21,13 @@ body{
     background-color: #2f4256;
 }
 
+#projects-BGC{
+    background-color: #000;
+}
+
 header{
     overflow: hidden;
     text-align: justify;
-    font-size: 24px;
     position: relative;
     padding: 15px 1%;
 }
@@ -40,7 +48,7 @@ header section{
 .header-title{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 5px;
     margin-left: 3em;
     letter-spacing: .18em;
@@ -58,15 +66,12 @@ header section{
     margin: 10px auto;
 }
 
-.top-nav-alt{
-    grid-template-columns: 1fr 1fr 1fr 1fr !important;
-}
-
 .top-nav a{
     border-radius: 10px;
     color: #FFF;
     padding: 16px 30px;
-    font-size: 0.75em;
+    font-size: 1.15em;
+    line-height: 25px;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
 }
@@ -95,11 +100,6 @@ header section{
 #projectsBG{
     background-image: url(./assets/projectsBG.jpg);
     min-height: 100vh;
-}   
-
-@keyframes fade {
-    from{opacity: 0;}
-    to{opacity: 1;}
 }
 
 .captitle{
