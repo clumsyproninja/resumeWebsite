@@ -22,7 +22,7 @@ body{
 }
 
 #projects-BGC{
-    background-color: #000;
+    background-color: #050505;
 }
 
 header{
@@ -99,7 +99,16 @@ header section{
 
 #projectsBG{
     background-image: url(./assets/projectsBG.jpg);
-    min-height: 100vh;
+    min-height: 75vh;
+}
+
+#pythonSect{
+    min-height: 75vh;
+}
+
+#pythonLogo{
+    margin: 15px 0 20px auto;
+    max-height: 15vh;
 }
 
 .captitle{
