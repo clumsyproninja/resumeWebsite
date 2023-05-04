@@ -99,16 +99,60 @@ header section{
 
 #projectsBG{
     background-image: url(./assets/projectsBG.jpg);
-    min-height: 75vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
 }
 
 #pythonSect{
-    min-height: 75vh;
+    background-color: hsl(203, 100%, 12%);
+    height: 500px;
 }
 
 #pythonLogo{
-    margin: 15px 0 20px auto;
-    max-height: 15vh;
+    display: block;
+    padding: 20px 0 50px;
+    margin: auto;
+    height: 12vh;
+}
+
+#pythonSect article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-style: double;
+    border-width: 7px;
+    border-color: hsl(186, 100%, 10%);
+    background-color: #004e57;
+    width: 70%;
+    margin: auto;
+    color: #fff;
+}
+
+#pythonSect h1{
+    padding: 0;
+    font-size: 2.8em;
+}
+
+#pythonSect p{
+    margin: 0 auto 20px;
+    font-family: 'Merriweather', Times, serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+#pythonSect a{
+    background-color: hsl(203, 100%, 8%);
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 25px;
 }
 
 .captitle{
