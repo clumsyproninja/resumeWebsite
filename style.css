@@ -106,7 +106,7 @@ header section{
 }
 
 #pythonSect{
-    background-color: hsl(203, 100%, 12%);
+    background-color: #00263d;
     height: 500px;
 }
 
@@ -124,7 +124,7 @@ header section{
     justify-items: center;
     border-style: double;
     border-width: 7px;
-    border-color: hsl(186, 100%, 10%);
+    border-color: #002e33
     background-color: #004e57;
     width: 70%;
     margin: auto;
@@ -144,7 +144,7 @@ header section{
 }
 
 #pythonSect a{
-    background-color: hsl(203, 100%, 8%);
+    background-color: #001929;
     color: white;
     font-family: 'Spinnaker', sans-serif;
     text-decoration: none;
@@ -199,7 +199,7 @@ header section{
     border: 10px ridge #000;
     border-top-left-radius: 75px;
     border-bottom-right-radius: 75px;
-    background-color: hsl(210, 100%, 76%);
+    background-color: #85c2ff;
     text-align: center;
 }
 
@@ -302,7 +302,7 @@ header section{
 }
 
 #contact-info a:hover{
-    background-color: hsl(190, 69%, 73%);
+    background-color: #8bdaea;
 }
 
 footer{
