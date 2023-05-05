@@ -107,7 +107,7 @@ header section{
 
 #pythonSect{
     background-color: #00263d;
-    height: 500px;
+    height: 800px;
 }
 
 #pythonLogo{
@@ -117,23 +117,37 @@ header section{
     height: 12vh;
 }
 
+#projectGamble{
+    border: 7px double #002e33;
+    border-radius: 25px;
+    background-color: #004e57;
+}
+
+#projectTT3{
+    border-radius: 25px;
+    height: 220px;
+    background-color: hsl(215, 80%, 80%);
+    color: #000 !important;
+}
+
+#projectTT3 h1{
+    text-shadow: none !important;
+}
+
 #pythonSect article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    border-style: double;
-    border-width: 7px;
-    border-color: #002e33;
-    background-color: #004e57;
     width: 70%;
-    margin: auto;
+    margin: 0 auto 40px;
     color: #fff;
 }
 
 #pythonSect h1{
     padding: 0;
     font-size: 2.8em;
+    text-decoration: underline solid currentColor 5px;
 }
 
 #pythonSect p{
@@ -153,6 +167,11 @@ header section{
     margin: 30px;
     padding: 20px;
     border-radius: 25px;
+}
+
+#overlapRow{
+    grid-row: 1 / 3;
+    grid-column: 2 / 2;
 }
 
 .captitle{
