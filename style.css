@@ -118,14 +118,14 @@ header section{
 }
 
 #projectGamble{
-    border: 7px double #002e33;
-    border-radius: 25px;
+    border: 10px double #002e33;
+    border-radius: 45px;
     background-color: #004e57;
 }
 
 #projectTT3{
-    border-radius: 25px;
-    height: 220px;
+    border-radius: 45px;
+    height: 250px;
     background-color: hsl(215, 80%, 80%);
     color: #000 !important;
 }
