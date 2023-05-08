@@ -25,6 +25,10 @@ body{
     background-color: #050505;
 }
 
+#customPC-BGC{
+    background-color: hsl(200, 70%, 13%);
+}
+
 header{
     overflow: hidden;
     text-align: justify;
@@ -97,12 +101,19 @@ header section{
     min-height: 100vh;
 }
 
-#projectsBG{
-    background-image: url(./assets/projectsBG.jpg);
+#projectsBG, #customPCBG{
     margin: 0;
     background-position: center;
     background-size: cover;
     height: 75vh;
+}
+
+#projectsBG{
+    background-image: url(./assets/projectsBG.jpg);
+}
+
+#customPCBG{
+    background-image: url(./assets/amdBG.jpg);
 }
 
 #pythonSect{
