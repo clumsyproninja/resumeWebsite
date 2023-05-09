@@ -18,7 +18,7 @@ body{
 }
 
 #home-BGC{
-    background-color: #2f4256;
+    background-color: #2F4256;
 }
 
 #projects-BGC{
@@ -26,7 +26,7 @@ body{
 }
 
 #customPC-BGC{
-    background-color: hsl(200, 70%, 13%);
+    background-color: #0A2938;
 }
 
 header{
@@ -81,11 +81,11 @@ header section{
 }
 
 .top-nav a:hover{
-    background-color: #003f66;
+    background-color: #003F66;
 }
 
 .top-nav a.active{
-    background-color: #003f66;
+    background-color: #003F66;
 }
 
 .IMG-style{
@@ -117,7 +117,7 @@ header section{
 }
 
 #pythonSect{
-    background-color: #00263d;
+    background-color: #00263D;
     height: 1100px;
 }
 
@@ -134,14 +134,14 @@ header section{
 }
 
 #projectGamble{
-    border-color: #002e33;
-    background-color: #004e57;
+    border-color: #002E33;
+    background-color: #004E57;
 }
 
 #projectTT3{
     height: 250px;
-    border-color: #203a60;
-    background-color: #a3c5f5;
+    border-color: #203A60;
+    background-color: #A3C5f5;
     color: #000 !important;
 }
 
@@ -151,7 +151,7 @@ header section{
 
 #projectRPS{
     height: 250px;
-    border-color: hsl(210, 75%, 10%);
+    border-color: #061A2D;
     background-color: #104070;
 }
 
@@ -204,14 +204,21 @@ header section{
 }
 
 .captitle span.border{
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: #000;
+    background-color: #00000066;
     color: #FFF;
-    border: 4px solid #f1f1f1;
+    border: 4px solid #F1F1F1;
     font-family: 'Kanit', sans-serif;
     font-size: 2.5em;
     padding: 20px;
     white-space: nowrap;
+}
+
+#pcShowcase{
+    min-height: 50vh;
+    background-color: #000;
+    text-shadow: none !important;
+    color: #FFF;
 }
 
 #main-sect{
@@ -235,11 +242,11 @@ header section{
 #home-nav{
     margin: 20px auto;
     width: 30%;
-    min-height: 25vh;
+    min-height: 30vh;
     border: 10px ridge #000;
     border-top-left-radius: 75px;
     border-bottom-right-radius: 75px;
-    background-color: #85c2ff;
+    background-color: #85C2FF;
     text-align: center;
 }
 
@@ -249,8 +256,8 @@ header section{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 20px auto;
+    gap: 45px;
+    margin: 45px auto;
 }
 
 #home-nav a{
@@ -267,7 +274,7 @@ header section{
 }
 
 #home-nav a:hover{
-    background-color: #99ccff;
+    background-color: #99CCFF;
 }
 
 .aboutBG{
@@ -279,7 +286,7 @@ header section{
 }
 
 #about{
-    background-color: #004e57;
+    background-color: #004E57;
     color: #FFF;
     min-height: 36vh;
 }
@@ -298,7 +305,7 @@ header section{
 }
 
 #contact{
-    background-color: #a9e3ef;
+    background-color: #A9E3Ef;
     color: #000;
     min-height: 32vh;
 }
@@ -342,7 +349,7 @@ header section{
 }
 
 #contact-info a:hover{
-    background-color: #8bdaea;
+    background-color: #8BDAEA;
 }
 
 footer{
