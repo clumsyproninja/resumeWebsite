@@ -38,6 +38,25 @@
     }
 }
 
+@keyframes type{
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+  
+@keyframes blink-caret{
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -60,36 +79,39 @@ body{
 
 header{
     overflow: hidden;
-    text-align: justify;
-    position: relative;
-    padding: 15px 1%;
+    padding: 10px 1%;
 }
 
 header section{
     float: left;
-    display: inline;
+    display: grid;
+    grid-template-columns: 1fr;
     padding-left: 0.5%;
+    align-items: center;
 }
 
 .navicon{
     width: 40px;
     height: 40px;
-    float: left;
-    padding-top: 5px;
 }
 
 .header-title{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
-    font-size: 24px;
-    line-height: 5px;
-    margin-left: 3em;
+    font-size: 1.3em;
     letter-spacing: .18em;
+    padding-left: 25px;
+    grid-column: 2 / 2;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: fit-content;
+    animation: type 1s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 .top-nav{
     float: right;
     text-align: center;
+    margin-top: 5px;
 }
 
 .top-nav ul{
