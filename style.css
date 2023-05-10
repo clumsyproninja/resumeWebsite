@@ -10,6 +10,34 @@
     to{opacity: 1;}
 }
 
+@counter-style pcList{
+    system: cyclic;
+    symbols: "🖥️";
+    suffix: " ";
+}
+
+@keyframes glitch {
+    0% {
+      text-shadow: -1px -1px #00FFE9, 1px 1px #FF006C;
+    }
+    25% {
+      text-shadow: -1px -1px #00FFE9, 1px 1px #FF006C;
+      transform: rotate(-5deg);
+    }
+    50% {
+      text-shadow: -1px -1px #00FFE9, 1px 1px #FF006C;
+      transform: rotate(5deg);
+    }
+    75% {
+      text-shadow: -1px -1px #00FFE9, 1px 1px #FF006C;
+      transform: rotate(-5deg);
+    }
+    100% {
+      text-shadow: -1px -1px #00FFE9, 1px 1px #FF006C;
+      transform: rotate(0deg);
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -302,6 +330,24 @@ header section{
     border-bottom: 10px ridge #0A397F;
     border-left: 10px groove #0A397F;
     border-radius: 20px;
+    animation: glitch 1s linear infinite;
+}
+
+#pcSpecs{
+    margin-bottom: 50px;
+    color: #FFF;
+    text-shadow: none;
+}
+
+#specsDescription{
+    margin-top: 50px;
+    padding-left: 40%;
+    list-style: pcList;
+    font-family: "Merriweather", Times, serif;
+}
+
+#specsDescription p{
+    margin-bottom: 35px;
 }
 
 #main-sect{
@@ -376,7 +422,7 @@ header section{
 
 #about-desc{
     background-color: #004047;
-    font-family: 'Merriweather', Times, serif;
+    font-family: "Merriweather", Times, serif;
     font-size: 1.3em;
     margin: 15px;
     padding: 0 15px;
