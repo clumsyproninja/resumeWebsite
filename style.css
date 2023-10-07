@@ -99,11 +99,8 @@
     }
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
-}
-
-body{
     margin: 0;
 }
 
@@ -120,24 +117,24 @@ body{
 }
 
 header{
-    overflow: hidden;
     padding: 10px 1%;
-}
-
-header section{
-    float: left;
     display: grid;
-    grid-template-columns: 1fr;
-    padding-left: 0.5%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
     align-items: center;
 }
 
-.navicon{
-    width: 40px;
-    height: 40px;
+header section{
+    display: flex;
 }
 
-.header-title{
+header section img{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+header section h1{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
     font-size: 1.3em;
@@ -150,34 +147,33 @@ header section{
     animation: type 1s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-.top-nav{
-    float: right;
+header nav{
     text-align: center;
-    margin-top: 5px;
+    grid-area: 1 / 3;
 }
 
-.top-nav ul{
+header nav ul{
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
 }
 
-.top-nav a{
+header nav a{
     border-radius: 10px;
     color: #FFF;
-    padding: 16px 30px;
-    font-size: 1.15em;
-    line-height: 25px;
+    padding: 15px 25px;
+    font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
 }
 
-.top-nav a:hover{
+header nav a:hover{
     background-color: #003F66;
 }
 
-.top-nav a.active{
+header nav a.active{
     background-color: #003F66;
 }
 
@@ -318,7 +314,8 @@ header section{
     background-color: #2e0953;
     margin: 50px 50px 0;
     display: grid;
-    grid-template: auto auto 460px auto 390px / repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 1%;
     justify-items: center;
     align-items: center;
 }
@@ -363,8 +360,8 @@ header section{
     margin: 50px 50px 0;
     padding-bottom: 40px;
     display: grid;
-    grid-template: auto 450px / repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px .5%;
     justify-items: center;
 }
 
@@ -434,7 +431,7 @@ header section{
 
 #home-nav{
     margin: 20px auto;
-    width: 30%;
+    width: 35%;
     min-height: 30vh;
     border: 10px ridge #000;
     border-top-left-radius: 75px;
@@ -447,10 +444,10 @@ header section{
     width: 45%;
     list-style: none;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 45px;
-    margin: 45px auto;
+    display: flex;
+    gap: 40px;
+    margin: 40px auto;
+    flex-direction: column;
 }
 
 #home-nav a{
