@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap&family=Spinnaker&family=Kanit:wght@300&family=Karla&family=Merriweather&family=Indie+Flower&display=swap');
 
 @keyframes fade{
     from{opacity: 0;}
@@ -26,17 +21,8 @@
     0%{
       transform: translateY(0);
     }
-    20%{
+    50%{
       transform: translateY(-1rem);
-    }
-    40%{
-      transform: translateY(0);
-    }
-    60%{
-      transform: translateY(-0.5rem);
-    }
-    80%{
-      transform: translateY(0);
     }
     100%{
       transform: translateY(-0.25rem);
@@ -557,7 +543,7 @@ header nav a.active{
 #contact-info :last-child{
     font-family: "Spinnaker", sans-serif !important;
     font-size: 1.2em;
-    animation: kinetic 2s ease-in-out infinite alternate;
+    animation: kinetic 1s ease-in-out infinite alternate;
 } 
 
 footer{
@@ -568,6 +554,6 @@ footer{
     background-color: #0A397F;
     padding: 1.5%;
     width: 100%;
-    box-shadow: 0px 0px 16px 4.5px #0A397F;
+    box-shadow: 0px 0px 8px 2px #0A397F;
     box-sizing: border-box;
 }
