@@ -47,7 +47,7 @@ I recently upgraded my PC setup to enhance my development experience. Here are t
 - **Graphics Card:** AMD Radeon RX 6800 XT
 - **RAM:** Corsair Vengeance LPX 3600 C18 32GB
 - **Storage:** WD_Black SN850 1TB M.2 SSD
-- **Operating System:** Windows 11 Pro, Ubuntu VM on Oracle VM VirtualBox Manager
+- **Operating System:** Windows 11 Pro, Ubuntu VM on Oracle VM VirtualBox
 
 ## Contact
 
