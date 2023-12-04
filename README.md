@@ -51,6 +51,6 @@ I recently upgraded my PC setup to enhance my development experience. Here are t
 
 ## Contact
 
-Feel free to reach out to me! You can contact me via email at [andeivimejiat@outlook.com](mailto:andeivimejiat@outlook.com) or connect with me on [Discord](discordapp.com/users/254781012792442880).
+Feel free to reach out to me! You can contact me via email at [andeivimejiat@outlook.com](mailto:andeivimejiat@outlook.com) or connect with me on [Discord](https://discordapp.com/users/254781012792442880).
 
 Let's collaborate and build something amazing together!
