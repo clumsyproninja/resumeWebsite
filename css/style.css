@@ -170,7 +170,7 @@ header nav a.active{
 }
 
 #homeBG{
-    background-image: url(./assets/homeBG.jpg);
+    background-image: url(/assets/backgrounds/homeBG.jpg);
     filter: blur(1.5px);
     min-height: 100vh;
 }
@@ -183,11 +183,11 @@ header nav a.active{
 }
 
 #projectsBG{
-    background-image: url(./assets/projectsBG.jpg);
+    background-image: url(/assets/backgrounds/projectsBG.jpg);
 }
 
 #customPCBG{
-    background-image: url(./assets/amdBG.jpg);
+    background-image: url(/assets/backgrounds/customPCBG.jpg);
 }
 
 #pythonSect{
@@ -455,7 +455,7 @@ header nav a.active{
 }
 
 .aboutBG{
-    background-image: url(./assets/aboutBG.jpg);
+    background-image: url(/assets/backgrounds/aboutBG.jpg);
     min-height: 60vh;
     /* parallax effect */
     background-attachment: fixed;
