@@ -1,4 +1,8 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap&family=Spinnaker&family=Kanit:wght@300&family=Karla&family=Merriweather&family=Indie+Flower&display=swap');
+
+/* Animations */
 
 @keyframes fade{
     from{opacity: 0;}
@@ -79,6 +83,8 @@
     }
 }
 
+/* Custom List */
+
 @counter-style pcList{
     system: cyclic;
     symbols: "🖥️";
@@ -90,30 +96,15 @@ html, body{
     margin: 0;
 }
 
-
-#projects-BGC{
-    background-color: #050505;
-}
-
 #customPC-BGC{
     background-color: #0A2938;
-}
-
-
-#projectsBG, #customPCBG{
-    margin: 0;
-    background-position: center;
-    background-size: cover;
-    height: 75vh;
-}
-
-#projectsBG{
-    background-image: url(/assets/backgrounds/projectsBG.jpg);
 }
 
 #customPCBG{
     background-image: url(/assets/backgrounds/customPCBG.jpg);
 }
+
+/* Global Header */
 
 header{
     padding: 0.55% 1%;
@@ -173,6 +164,8 @@ header nav a:hover{
 header nav a.active{
     background-color: #003F66;
 }
+
+/* Home Page */
 
 #home-BGC{
     background-color: #2F4256;
@@ -357,77 +350,29 @@ header nav a.active{
     animation: kinetic 1s ease-in-out infinite alternate;
 }
 
-/* #homeMain section:nth-of-type(3) article{
-    min-height: 235px;
-    text-align: center;
-    display: grid;
-    gap: 2px;
-    padding: 5px;
-    grid-template: 75px 75px / repeat(3, 1fr);
-    align-items: center;
+/* Projects Page */
+
+#projects-BGC{
+    background-color: #050505;
 }
 
-#homeMain section:nth-of-type(3) article *{
-    margin: 5px auto 0;
-    padding: 15px 0;
-    font-size: 1.4em;
-    font-family: 'Kanit', sans-serif;
+#projectMain figure{
+    background-image: url(/assets/backgrounds/projectsBG.jpg);
 }
 
-#homeMain section:nth-of-type(3) p,
-#homeMain section:nth-of-type(3) a{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0 auto !important;
-    font-size: 1.1em !important;
-    padding: 0px 0.5%;
-    height: 40px;
-}
-
-*/
-
-
-
-
-#pythonSect{
+#projectMain section:first-of-type{
     background-color: #00263D;
     height: 1100px;
-}        
+}
 
-#pythonLogo{
+#projectMain section:first-of-type img{
     display: block;
     padding: 20px 0 50px;
     margin: auto;
     height: 112px;
-}        
+}
 
-.project-format{
-    border: 10px double;
-    border-radius: 45px;
-}        
-
-#projectGamble{
-    border-color: #002E33;
-    background-color: #004E57;
-}        
-
-#projectTT3{
-    height: 250px;
-    border-color: #203A60;
-    background-color: #A3C5f5;
-    color: #000 !important;
-}        
-
-#projectTT3 h1{
-    text-shadow: none !important;
-}        
-
-#projectRPS{
-    height: 250px;
-    border-color: #061A2D;
-    background-color: #104070;
-}        
-
-#pythonSect article{
+#projectMain section:first-of-type article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -435,22 +380,27 @@ header nav a.active{
     width: 70%;
     margin: 0 auto 40px;
     color: #fff;
+}
+
+.project-format{
+    border: 10px double;
+    border-radius: 45px;
 }        
 
-#pythonSect h1{
+#projectMain section:first-of-type h1{
     padding: 0;
     font-size: 2.8em;
     text-decoration: underline solid currentColor 5px;
 }        
 
-#pythonSect p{
+#projectMain section:first-of-type p{
     margin: 0 auto 20px;
     font-family: 'Merriweather', Times, serif;
     font-size: 1.1em;
     text-align: center;
 }        
 
-#pythonSect a{
+#projectMain section:first-of-type a{
     background-color: #001929;
     color: white;
     font-family: 'Spinnaker', sans-serif;
@@ -461,6 +411,38 @@ header nav a.active{
     padding: 20px;
     border-radius: 25px;
 }        
+
+#projectMain section:first-of-type article:first-of-type{
+    border-color: #002E33;
+    background-color: #004E57;
+}        
+
+#projectMain section:first-of-type article:nth-of-type(2){
+    height: 250px;
+    border-color: #203A60;
+    background-color: #A3C5f5;
+    color: #000 !important;
+}        
+
+#projectMain section:first-of-type article:nth-of-type(2) h1{
+    text-shadow: none !important;
+}        
+
+#projectMain section:first-of-type article:nth-of-type(3){
+    height: 250px;
+    border-color: #061A2D;
+    background-color: #104070;
+}        
+
+/* Custom PC Page */
+
+#projectMain figure,
+#customPCBG{
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
 
 .overlapRow{
     grid-row: 1 / 3;
@@ -576,7 +558,7 @@ header nav a.active{
     margin-bottom: 35px;
 }    
 
-
+/* Footer */
 
 footer{
     text-align: center;
