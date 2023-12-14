@@ -313,7 +313,7 @@ header nav a.active{
     animation: rotateY 4s linear infinite;
 }
 
-#contact-info{
+#homeMain section:nth-of-type(3) article{
     min-height: 235px;
     text-align: center;
     display: grid;
@@ -323,15 +323,15 @@ header nav a.active{
     align-items: center;
 }        
 
-#contact-info *{
+#homeMain section:nth-of-type(3) article *{
     margin: 5px auto 0;
     padding: 15px 0;
     font-size: 1.4em;
     font-family: 'Kanit', sans-serif;
 }        
 
-#contact-info p,
-#contact-info a{
+#homeMain section:nth-of-type(3) p,
+#homeMain section:nth-of-type(3) a{
     font-family: 'Courier New', Courier, monospace;
     margin: 0 auto !important;
     font-size: 1.1em !important;
@@ -339,7 +339,7 @@ header nav a.active{
     height: 40px;
 }        
 
-#contact-info a{
+#homeMain section:nth-of-type(3) a{
     padding-top: 5px;
     font-family: 'Spinnaker', sans-serif !important;
     color: #000;
@@ -349,11 +349,11 @@ header nav a.active{
     text-decoration: none;
 }        
 
-#contact-info a:hover{
+#homeMain section:nth-of-type(3) a:hover{
     background-color: #8BDAEA;
 }        
 
-#contact-info :last-child{
+#homeMain section:nth-of-type(3) p:last-of-type{
     font-family: "Spinnaker", sans-serif !important;
     font-size: 1.2em;
     animation: kinetic 1s ease-in-out infinite alternate;
