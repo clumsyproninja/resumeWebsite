@@ -88,18 +88,39 @@
 html, body{
     scroll-behavior: smooth;
     margin: 0;
-}
+}    
 
 #home-BGC{
     background-color: #2F4256;
-}
+}    
 
 #projects-BGC{
     background-color: #050505;
-}
+}    
 
 #customPC-BGC{
     background-color: #0A2938;
+}    
+
+#homeBG{
+    background-image: url(/assets/backgrounds/homeBG.jpg);
+    filter: blur(1.5px);
+    min-height: 100vh;
+}    
+
+#projectsBG, #customPCBG{
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}    
+
+#projectsBG{
+    background-image: url(/assets/backgrounds/projectsBG.jpg);
+}    
+
+#customPCBG{
+    background-image: url(/assets/backgrounds/customPCBG.jpg);
 }
 
 header{
@@ -108,19 +129,19 @@ header{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     align-items: center;
-}
+}    
 
 header section{
     display: flex;
-}
+    align-items: center;
+}    
 
-header section img{
+header img{
     width: 40px;
     height: 40px;
-    align-self: center;
-}
+}    
 
-header section h1{
+header h1{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
     font-size: 1.3em;
@@ -131,19 +152,19 @@ header section h1{
     white-space: nowrap;
     max-width: fit-content;
     animation: type 1s steps(40, end), blink-caret .75s step-end infinite;
-}
+}    
 
 header nav{
     text-align: center;
     grid-area: 1 / 3;
-}
+}    
 
 header nav ul{
     list-style: none;
     display: flex;
     align-items: center;
     gap: 15px;
-}
+}    
 
 header nav a{
     border-radius: 10px;
@@ -152,267 +173,24 @@ header nav a{
     font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-}
+}    
 
 header nav a:hover{
     background-color: #003F66;
-}
+}    
 
 header nav a.active{
     background-color: #003F66;
-}
-
-.IMG-style{
-    margin: 0;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-}
-
-#homeBG{
-    background-image: url(/assets/backgrounds/homeBG.jpg);
-    filter: blur(1.5px);
-    min-height: 100vh;
-}
-
-#projectsBG, #customPCBG{
-    margin: 0;
-    background-position: center;
-    background-size: cover;
-    height: 75vh;
-}
-
-#projectsBG{
-    background-image: url(/assets/backgrounds/projectsBG.jpg);
-}
-
-#customPCBG{
-    background-image: url(/assets/backgrounds/customPCBG.jpg);
-}
-
-#pythonSect{
-    background-color: #00263D;
-    height: 1100px;
-}
-
-#pythonLogo{
-    display: block;
-    padding: 20px 0 50px;
-    margin: auto;
-    height: 112px;
-}
-
-.project-format{
-    border: 10px double;
-    border-radius: 45px;
-}
-
-#projectGamble{
-    border-color: #002E33;
-    background-color: #004E57;
-}
-
-#projectTT3{
-    height: 250px;
-    border-color: #203A60;
-    background-color: #A3C5f5;
-    color: #000 !important;
-}
-
-#projectTT3 h1{
-    text-shadow: none !important;
-}
-
-#projectRPS{
-    height: 250px;
-    border-color: #061A2D;
-    background-color: #104070;
-}
-
-#pythonSect article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    width: 70%;
-    margin: 0 auto 40px;
-    color: #fff;
-}
-
-#pythonSect h1{
-    padding: 0;
-    font-size: 2.8em;
-    text-decoration: underline solid currentColor 5px;
-}
-
-#pythonSect p{
-    margin: 0 auto 20px;
-    font-family: 'Merriweather', Times, serif;
-    font-size: 1.1em;
-    text-align: center;
-}
-
-#pythonSect a{
-    background-color: #001929;
-    color: white;
-    font-family: 'Spinnaker', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    width: 20%;
-    margin: 30px;
-    padding: 20px;
-    border-radius: 25px;
-}
-
-.overlapRow{
-    grid-row: 1 / 3;
-    grid-column: 2 / 2;
-}
-
-.captitle{
-    position: absolute;
-    top: 30vh;
-    width: 100%;
-    text-align: center;
-    animation: fade 4s ease forwards;
-}
-
-.captitle span.border{
-    background-color: #000;
-    background-color: #00000066;
-    color: #FFF;
-    border: 4px solid #F1F1F1;
-    font-family: 'Kanit', sans-serif;
-    font-size: 2.5em;
-    padding: 20px;
-    white-space: nowrap;
-}
-
-#pcShowcase{
-    background-color: #000;
-    text-shadow: none !important;
-    color: #FFF;
-    padding-bottom: 40px;
-}
-
-#stock-gallery{
-    background-color: #2e0953;
-    margin: 50px 50px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px 1%;
-    justify-items: center;
-    align-items: center;
-}
-
-#stockTitle1,
-#stockTitle2{
-    font-family: "Indie Flower", cursive;
-    font-size: 1.85em;
-    grid-column: 1 / 4;
-    text-align: center;
-    width: fit-content;
-    border-radius: 5px;
-}
-
-#stockTitle1{
-    border-top: 10px groove #85C2FF;
-    border-bottom: 10px ridge #85C2FF;
-}
-
-#stockTitle2{
-    border-top: 10px ridge #A3C5f5;
-    border-bottom: 10px groove #A3C5f5;
-}
-
-#stock-gallery img{
-    width: 400px;
-    height: 400px;
-}
-
-#stock-gallery :nth-last-child(2){
-    grid-row: 5 / 5;
-    grid-column: 1 / 3;
-}
-
-#stock-gallery :last-child{
-    grid-row: 5 / 5;
-    grid-column: 2 / 4;
-}
-
-#upgrade-gallery{
-    background-color: hsl(150, 45%, 16%);
-    margin: 50px 50px 0;
-    padding-bottom: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px .5%;
-    justify-items: center;
-}
-
-#upgrade-gallery :nth-child(2),
-#upgrade-gallery :nth-child(3),
-#upgrade-gallery :nth-child(4){
-    width: 550px;
-    height: 400px;
-}
-
-#upgrade-gallery :nth-child(5),
-#upgrade-gallery :nth-child(6),
-#upgrade-gallery :last-child{
-    width: 400px;
-    height: 500px;
-}
-
-#upgradeTitle{
-    font-family: "Indie Flower", cursive;
-    font-size: 1.85em;
-    grid-column: 1 / 4;
-    text-align: center;
-    width: fit-content;
-    padding: 10px;
-    border-top: 10px groove #0A397F;
-    border-right: 10px ridge #0A397F;
-    border-bottom: 10px ridge #0A397F;
-    border-left: 10px groove #0A397F;
-    border-radius: 20px;
-    animation: glitch 1s linear infinite;
-}
-
-#pcSpecs{
-    margin-bottom: 50px;
-    color: #FFF;
-    text-shadow: none;
-}
-
-#specsDescription{
-    margin-top: 50px;
-    padding-left: 40%;
-    list-style: pcList;
-    font-family: "Merriweather", Times, serif;
-}
-
-#specsDescription p{
-    margin-bottom: 35px;
-}
+}        
 
 #main-sect{
     min-height: 45vh;
-}
-
-.title-format{
-    margin: auto;
-    padding: 20px 5px 5px;
-    font-family: "Karla", sans-serif;
-    font-size: 2em;
-    text-shadow: 2px 2px 5px #000;
-    width: fit-content;
-}
+}    
 
 #main-info{
     color: #FFF;
     border-radius: 5px;
-}
+}    
 
 #home-nav{
     margin: 20px auto;
@@ -423,7 +201,7 @@ header nav a.active{
     border-bottom-right-radius: 75px;
     background-color: #57abff;
     text-align: center;
-}
+}    
 
 #home-nav ul{
     width: 45%;
@@ -433,7 +211,7 @@ header nav a.active{
     gap: 40px;
     margin: 40px auto;
     flex-direction: column;
-}
+}    
 
 #home-nav a{
     display: block;
@@ -448,11 +226,11 @@ header nav a.active{
     font-weight: bold;
     text-decoration: none;
     background-color: #80bfff;
-}
+}    
 
 #home-nav a:hover{
     background-color: #99ccff;
-}
+}    
 
 .aboutBG{
     background-image: url(/assets/backgrounds/aboutBG.jpg);
@@ -460,17 +238,17 @@ header nav a.active{
     /* parallax effect */
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+}    
 
 #about{
     background-color: #004E57;
     color: #FFF;
     min-height: 36vh;
-}
+}    
 
 #about h1{
     animation: zoom 2s infinite;
-}
+}    
 
 #about-desc{
     background-color: #004047;
@@ -479,17 +257,17 @@ header nav a.active{
     margin: 15px;
     padding: 0 15px;
     border: 5px double #000;
-}
+}    
 
 #about-desc strong{
     font-weight: normal;
-}
+}    
 
 #contact{
     background-color: #A9E3Ef;
     color: #000;
     min-height: 32vh;
-}
+}    
 
 #contact h1{
     text-shadow: none;
@@ -497,7 +275,7 @@ header nav a.active{
     margin-bottom: 15px;
     transform-style: preserve-3d;
     animation: rotateY 4s linear infinite;
-}
+}    
 
 #contact-info{
     min-height: 235px;
@@ -507,14 +285,14 @@ header nav a.active{
     padding: 5px;
     grid-template: 75px 75px / repeat(3, 1fr);
     align-items: center;
-}
+}    
 
 #contact-info *{
     margin: 5px auto 0;
     padding: 15px 0;
     font-size: 1.4em;
     font-family: 'Kanit', sans-serif;
-}
+}    
 
 #contact-info p,
 #contact-info a{
@@ -523,7 +301,7 @@ header nav a.active{
     font-size: 1.1em !important;
     padding: 0px 0.5%;
     height: 40px;
-}
+}    
 
 #contact-info a{
     padding-top: 5px;
@@ -533,17 +311,244 @@ header nav a.active{
     border-radius: 10px;
     border: 4px solid #000;
     text-decoration: none;
-}
+}    
 
 #contact-info a:hover{
     background-color: #8BDAEA;
-}
+}    
 
 #contact-info :last-child{
     font-family: "Spinnaker", sans-serif !important;
     font-size: 1.2em;
     animation: kinetic 1s ease-in-out infinite alternate;
-} 
+}    
+
+.IMG-style{
+    margin: 0;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}        
+
+
+#pythonSect{
+    background-color: #00263D;
+    height: 1100px;
+}    
+
+#pythonLogo{
+    display: block;
+    padding: 20px 0 50px;
+    margin: auto;
+    height: 112px;
+}    
+
+.project-format{
+    border: 10px double;
+    border-radius: 45px;
+}    
+
+#projectGamble{
+    border-color: #002E33;
+    background-color: #004E57;
+}    
+
+#projectTT3{
+    height: 250px;
+    border-color: #203A60;
+    background-color: #A3C5f5;
+    color: #000 !important;
+}    
+
+#projectTT3 h1{
+    text-shadow: none !important;
+}    
+
+#projectRPS{
+    height: 250px;
+    border-color: #061A2D;
+    background-color: #104070;
+}    
+
+#pythonSect article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+    margin: 0 auto 40px;
+    color: #fff;
+}    
+
+#pythonSect h1{
+    padding: 0;
+    font-size: 2.8em;
+    text-decoration: underline solid currentColor 5px;
+}    
+
+#pythonSect p{
+    margin: 0 auto 20px;
+    font-family: 'Merriweather', Times, serif;
+    font-size: 1.1em;
+    text-align: center;
+}    
+
+#pythonSect a{
+    background-color: #001929;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 25px;
+}    
+
+.overlapRow{
+    grid-row: 1 / 3;
+    grid-column: 2 / 2;
+}    
+
+.captitle{
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    text-align: center;
+    animation: fade 4s ease forwards;
+}    
+
+.captitle span.border{
+    background-color: #000;
+    background-color: #00000066;
+    color: #FFF;
+    border: 4px solid #F1F1F1;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5em;
+    padding: 20px;
+    white-space: nowrap;
+}    
+
+#pcShowcase{
+    background-color: #000;
+    text-shadow: none !important;
+    color: #FFF;
+    padding-bottom: 40px;
+}    
+
+#stock-gallery{
+    background-color: #2e0953;
+    margin: 50px 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 1%;
+    justify-items: center;
+    align-items: center;
+}    
+
+#stockTitle1,
+#stockTitle2{
+    font-family: "Indie Flower", cursive;
+    font-size: 1.85em;
+    grid-column: 1 / 4;
+    text-align: center;
+    width: fit-content;
+    border-radius: 5px;
+}    
+
+#stockTitle1{
+    border-top: 10px groove #85C2FF;
+    border-bottom: 10px ridge #85C2FF;
+}    
+
+#stockTitle2{
+    border-top: 10px ridge #A3C5f5;
+    border-bottom: 10px groove #A3C5f5;
+}    
+
+#stock-gallery img{
+    width: 400px;
+    height: 400px;
+}    
+
+#stock-gallery :nth-last-child(2){
+    grid-row: 5 / 5;
+    grid-column: 1 / 3;
+}    
+
+#stock-gallery :last-child{
+    grid-row: 5 / 5;
+    grid-column: 2 / 4;
+}    
+
+#upgrade-gallery{
+    background-color: hsl(150, 45%, 16%);
+    margin: 50px 50px 0;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px .5%;
+    justify-items: center;
+}    
+
+#upgrade-gallery :nth-child(2),
+#upgrade-gallery :nth-child(3),
+#upgrade-gallery :nth-child(4){
+    width: 550px;
+    height: 400px;
+}    
+
+#upgrade-gallery :nth-child(5),
+#upgrade-gallery :nth-child(6),
+#upgrade-gallery :last-child{
+    width: 400px;
+    height: 500px;
+}    
+
+#upgradeTitle{
+    font-family: "Indie Flower", cursive;
+    font-size: 1.85em;
+    grid-column: 1 / 4;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    border-top: 10px groove #0A397F;
+    border-right: 10px ridge #0A397F;
+    border-bottom: 10px ridge #0A397F;
+    border-left: 10px groove #0A397F;
+    border-radius: 20px;
+    animation: glitch 1s linear infinite;
+}    
+
+#pcSpecs{
+    margin-bottom: 50px;
+    color: #FFF;
+    text-shadow: none;
+}    
+
+#specsDescription{
+    margin-top: 50px;
+    padding-left: 40%;
+    list-style: pcList;
+    font-family: "Merriweather", Times, serif;
+}    
+
+#specsDescription p{
+    margin-bottom: 35px;
+}    
+
+
+.title-format{
+    margin: auto;
+    padding: 20px 5px 5px;
+    font-family: "Karla", sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #000;
+    width: fit-content;
+}    
+
+
+
 
 footer{
     text-align: center;
