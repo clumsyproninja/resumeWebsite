@@ -88,36 +88,28 @@
 html, body{
     scroll-behavior: smooth;
     margin: 0;
-}    
+}
 
-#home-BGC{
-    background-color: #2F4256;
-}    
 
 #projects-BGC{
     background-color: #050505;
-}    
+}
 
 #customPC-BGC{
     background-color: #0A2938;
-}    
+}
 
-#homeBG{
-    background-image: url(/assets/backgrounds/homeBG.jpg);
-    filter: blur(1.5px);
-    min-height: 100vh;
-}    
 
 #projectsBG, #customPCBG{
     margin: 0;
     background-position: center;
     background-size: cover;
     height: 75vh;
-}    
+}
 
 #projectsBG{
     background-image: url(/assets/backgrounds/projectsBG.jpg);
-}    
+}
 
 #customPCBG{
     background-image: url(/assets/backgrounds/customPCBG.jpg);
@@ -134,65 +126,109 @@ header{
 header section{
     display: flex;
     align-items: center;
-}    
+}
 
 header img{
     width: 40px;
     height: 40px;
-}    
+}
 
 header h1{
     color: #FFF;
     font-family: 'Spinnaker', sans-serif;
     font-size: 1.3em;
     letter-spacing: .18em;
-    padding-left: 2.8%;
-    grid-column: 2 / 2;
+    margin-left: 2.8%;
     overflow: hidden;
     white-space: nowrap;
-    max-width: fit-content;
+    width: fit-content;
     animation: type 1s steps(40, end), blink-caret .75s step-end infinite;
-}    
+}
 
 header nav{
     text-align: center;
     grid-area: 1 / 3;
-}    
+}
 
-header nav ul{
+header ul{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 15px;
-}    
+    gap: 0 10px;
+}
 
 header nav a{
     border-radius: 10px;
     color: #FFF;
-    padding: 15px 25px;
+    padding: 15px 20px;
     font-size: 1.2em;
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-}    
+}
 
 header nav a:hover{
     background-color: #003F66;
-}    
+}
 
 header nav a.active{
     background-color: #003F66;
-}        
+}
 
-#main-sect{
+#home-BGC{
+    background-color: #2F4256;
+}
+
+.IMG-style{
+    margin: 0;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+#homeMain figure:first-of-type{
+    background-image: url(/assets/backgrounds/homeBG.jpg);
+    filter: blur(1.5px);
+    min-height: 100vh;
+}
+
+#homeMain figcaption{
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    text-align: center;
+    animation: fade 4s ease forwards;
+}
+
+#homeMain figcaption span{
+    background-color: #000;
+    background-color: #00000066;
+    color: #FFF;
+    border: 4px solid #F1F1F1;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5em;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+#homeMain section:first-of-type{
     min-height: 45vh;
-}    
+}
 
-#main-info{
+.title-format{
+    margin: auto;
+    padding: 20px 5px 5px;
+    font-family: "Karla", sans-serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #000;
+    width: fit-content;
+}
+
+#homeMain section:first-of-type h2{
     color: #FFF;
     border-radius: 5px;
-}    
+}
 
-#home-nav{
+#homeMain nav{
     margin: 20px auto;
     width: 35%;
     min-height: 30vh;
@@ -201,9 +237,9 @@ header nav a.active{
     border-bottom-right-radius: 75px;
     background-color: #57abff;
     text-align: center;
-}    
+}
 
-#home-nav ul{
+#homeMain ul{
     width: 45%;
     list-style: none;
     padding: 0;
@@ -211,9 +247,9 @@ header nav a.active{
     gap: 40px;
     margin: 40px auto;
     flex-direction: column;
-}    
+}
 
-#home-nav a{
+#homeMain section:first-of-type a{
     display: block;
     border-style: inset;
     border-width: 5px;
@@ -226,56 +262,56 @@ header nav a.active{
     font-weight: bold;
     text-decoration: none;
     background-color: #80bfff;
-}    
+}
 
-#home-nav a:hover{
+#homeMain section:first-of-type a:hover{
     background-color: #99ccff;
-}    
+}
 
-.aboutBG{
+#homeMain figure:nth-of-type(2),
+#homeMain figure:nth-of-type(3){
     background-image: url(/assets/backgrounds/aboutBG.jpg);
     min-height: 60vh;
-    /* parallax effect */
     background-attachment: fixed;
     background-repeat: no-repeat;
-}    
+}
 
-#about{
+#homeMain section:nth-of-type(2){
     background-color: #004E57;
     color: #FFF;
     min-height: 36vh;
-}    
+}
 
-#about h1{
+#homeMain section:nth-of-type(2) h1{
     animation: zoom 2s infinite;
-}    
+}
 
-#about-desc{
+#homeMain section:nth-last-of-type(2) article{
     background-color: #004047;
     font-family: "Merriweather", Times, serif;
     font-size: 1.3em;
     margin: 15px;
     padding: 0 15px;
     border: 5px double #000;
-}    
+}
 
-#about-desc strong{
+#homeMain section:nth-of-type(2) strong{
     font-weight: normal;
-}    
+}
 
-#contact{
+#homeMain section:nth-of-type(3){
     background-color: #A9E3Ef;
     color: #000;
     min-height: 32vh;
-}    
+}
 
-#contact h1{
+#homeMain section:nth-of-type(3) h1{
     text-shadow: none;
     letter-spacing: 1.5px;
     margin-bottom: 15px;
     transform-style: preserve-3d;
     animation: rotateY 4s linear infinite;
-}    
+}
 
 #contact-info{
     min-height: 235px;
@@ -285,14 +321,14 @@ header nav a.active{
     padding: 5px;
     grid-template: 75px 75px / repeat(3, 1fr);
     align-items: center;
-}    
+}        
 
 #contact-info *{
     margin: 5px auto 0;
     padding: 15px 0;
     font-size: 1.4em;
     font-family: 'Kanit', sans-serif;
-}    
+}        
 
 #contact-info p,
 #contact-info a{
@@ -301,7 +337,7 @@ header nav a.active{
     font-size: 1.1em !important;
     padding: 0px 0.5%;
     height: 40px;
-}    
+}        
 
 #contact-info a{
     padding-top: 5px;
@@ -311,64 +347,57 @@ header nav a.active{
     border-radius: 10px;
     border: 4px solid #000;
     text-decoration: none;
-}    
+}        
 
 #contact-info a:hover{
     background-color: #8BDAEA;
-}    
+}        
 
 #contact-info :last-child{
     font-family: "Spinnaker", sans-serif !important;
     font-size: 1.2em;
     animation: kinetic 1s ease-in-out infinite alternate;
-}    
-
-.IMG-style{
-    margin: 0;
-    position: relative;
-    background-position: center;
-    background-size: cover;
 }        
 
 
 #pythonSect{
     background-color: #00263D;
     height: 1100px;
-}    
+}        
 
 #pythonLogo{
     display: block;
     padding: 20px 0 50px;
     margin: auto;
     height: 112px;
-}    
+}        
 
 .project-format{
     border: 10px double;
     border-radius: 45px;
-}    
+}        
 
 #projectGamble{
     border-color: #002E33;
     background-color: #004E57;
-}    
+}        
 
 #projectTT3{
     height: 250px;
     border-color: #203A60;
     background-color: #A3C5f5;
     color: #000 !important;
-}    
+}        
 
 #projectTT3 h1{
     text-shadow: none !important;
-}    
+}        
 
 #projectRPS{
     height: 250px;
     border-color: #061A2D;
     background-color: #104070;
-}    
+}        
 
 #pythonSect article{
     display: grid;
@@ -378,20 +407,20 @@ header nav a.active{
     width: 70%;
     margin: 0 auto 40px;
     color: #fff;
-}    
+}        
 
 #pythonSect h1{
     padding: 0;
     font-size: 2.8em;
     text-decoration: underline solid currentColor 5px;
-}    
+}        
 
 #pythonSect p{
     margin: 0 auto 20px;
     font-family: 'Merriweather', Times, serif;
     font-size: 1.1em;
     text-align: center;
-}    
+}        
 
 #pythonSect a{
     background-color: #001929;
@@ -403,31 +432,13 @@ header nav a.active{
     margin: 30px;
     padding: 20px;
     border-radius: 25px;
-}    
+}        
 
 .overlapRow{
     grid-row: 1 / 3;
     grid-column: 2 / 2;
-}    
+}        
 
-.captitle{
-    position: absolute;
-    top: 30vh;
-    width: 100%;
-    text-align: center;
-    animation: fade 4s ease forwards;
-}    
-
-.captitle span.border{
-    background-color: #000;
-    background-color: #00000066;
-    color: #FFF;
-    border: 4px solid #F1F1F1;
-    font-family: 'Kanit', sans-serif;
-    font-size: 2.5em;
-    padding: 20px;
-    white-space: nowrap;
-}    
 
 #pcShowcase{
     background-color: #000;
@@ -536,17 +547,6 @@ header nav a.active{
 #specsDescription p{
     margin-bottom: 35px;
 }    
-
-
-.title-format{
-    margin: auto;
-    padding: 20px 5px 5px;
-    font-family: "Karla", sans-serif;
-    font-size: 2em;
-    text-shadow: 2px 2px 5px #000;
-    width: fit-content;
-}    
-
 
 
 
