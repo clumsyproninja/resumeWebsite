@@ -101,7 +101,7 @@ html, body{
 }
 
 #customPCBG{
-    background-image: url(/assets/backgrounds/customPCBG.jpg);
+    background-image: url(../assets/backgrounds/customPCBG.jpg);
 }
 
 /* Global Header */
@@ -179,7 +179,7 @@ header nav a.active{
 }
 
 #homeMain > figure:first-of-type{
-    background-image: url(/assets/backgrounds/homeBG.jpg);
+    background-image: url(../assets/backgrounds/homeBG.jpg);
     filter: blur(1.5px);
     min-height: 100vh;
 }
@@ -263,7 +263,7 @@ header nav a.active{
 
 #homeMain figure:nth-of-type(2),
 #homeMain figure:nth-of-type(3){
-    background-image: url(/assets/backgrounds/aboutBG.jpg);
+    background-image: url(../assets/backgrounds/aboutBG.jpg);
     min-height: 60vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -357,7 +357,7 @@ header nav a.active{
 }
 
 #projectMain figure{
-    background-image: url(/assets/backgrounds/projectsBG.jpg);
+    background-image: url(../assets/backgrounds/projectsBG.jpg);
 }
 
 #projectMain section:first-of-type{
