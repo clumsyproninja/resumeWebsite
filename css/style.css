@@ -622,6 +622,8 @@ input{
     margin: 20px auto;
 }
 
+/* fix colors in password rules */
+
 .showItem{
     display: block;
 }
