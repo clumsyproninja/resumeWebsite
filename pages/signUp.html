@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="signup-BGC">
+    <main id="signupMain">
+        <h1>Sign up now!</h1>
+        <p>By continuing, you are setting up an account with Programming Passion and agree to our <a target="_blank" href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-conditions-agreement.pdf">Terms and Conditions</a>.</p>
+        <form id="signup" method="get" action="">
+            <h2>Enter a username:</h2>
+            <label for="username">
+                <input id="username" type="text" name="username">
+            </label>
+            <p id="userError"></p>
+            <h2>Enter a password:</h2>
+            <label for="pass">
+                <input id="pass" type="password" name="pass">
+            </label>
+            <section id="pwdRules">
+                <h3>Password Rules: </h3>
+                <ul class="rulesList">
+                    <li>At least 8 characters.</li>
+                    <li>At least one lower case letter</li>
+                    <li>At least one upper case letter</li>
+                    <li>At least one of the following special characters: !@#$%&*.</li>
+                </ul>
+            </section>
+            <input type="submit" value="Create Account!">
+        </form>
+        <p id="status">Status: Sign up was not completed.</p>
+        <p>Already have an account? <a href="../index.html">LOG IN</a></p>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
