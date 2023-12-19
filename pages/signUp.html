@@ -12,14 +12,11 @@
         <p>By continuing, you are setting up an account with Programming Passion and agree to our <a target="_blank" href="https://www.termsfeed.com/public/uploads/2021/12/sample-terms-conditions-agreement.pdf">Terms and Conditions</a>.</p>
         <form id="signup" method="get" action="">
             <h2>Enter a username:</h2>
+            <p id="userError"></p>
             <label for="username">
                 <input id="username" type="text" name="username">
             </label>
-            <p id="userError"></p>
             <h2>Enter a password:</h2>
-            <label for="pass">
-                <input id="pass" type="password" name="pass">
-            </label>
             <section id="pwdRules" class="hideItem">
                 <h3>Password Rules: </h3>
                 <ul class="rulesList">
@@ -29,6 +26,9 @@
                     <li>At least one of the following special characters: !@#$%&*.</li>
                 </ul>
             </section>
+            <label for="pass">
+                <input id="pass" type="password" name="pass">
+            </label>
             <input type="submit" value="Create Account!">
         </form>
         <p id="status">Status: Sign up was not completed.</p>

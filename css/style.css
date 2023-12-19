@@ -585,13 +585,16 @@ header nav a.active{
     box-shadow: 0 0 10px #00000080;
 }
 
-#signup{
-    border: 1px solid #000;
-    padding: 0 15% 10px;
+#signupMain a{
+    text-decoration: none;
+    color: hsl(210, 100%, 35%);
 }
 
-#signup h3{
-    color: #000;
+#signup{
+    border: 1px solid #000;
+    background-color: #CCCCCC;
+    box-shadow: 1px 1px 10px #000;
+    padding: 0 15% 10px;
 }
 
 input{
@@ -602,13 +605,13 @@ input{
 }
 
 .validRule{
-    color: lightgreen;
+    color: #90ee90;
     text-decoration: line-through;
     list-style-type: "\2713";
 }
 
 .invalidRule{
-    color: pink;
+    color: #ffc0cb;
     font-weight: bold;
     list-style-type: "\78";
 }
@@ -616,10 +619,11 @@ input{
 #pwdRules{
     font-size: .8em;
     background-color: #250000;
-    border: 1px solid grey;
+    border: 1px solid #808080;
     border-radius: 10px;
     width: 80%;
     margin: 20px auto;
+    color: #FFF;
 }
 
 /* fix colors in password rules */
