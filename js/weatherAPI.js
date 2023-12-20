@@ -21,16 +21,10 @@ const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&l
 fetch(weatherAPI)
 .then(response => response.json())
     .then(data => {
+        const localDate = new Date((data.dt * 1000) + data.timezone)
+
         document.getElementById('location').textContent = data.name + ', ' + data.sys.country
-        document.getElementById('currentDate').textContent =
-            'Date and Time: ' + new Date(data.dt * 1000).toLocaleString('en-US', {
-                year: 'numeric',
-                month: 'numeric',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: true,
-            })
+        document.getElementById('currentDate').textContent = 'Date and Time: ' + localDate.toLocaleString()
         document.getElementById('temperature').textContent = 'Temperature: ' + kToF(data.main.temp).toFixed(0) + '°F'
         document.getElementById('feelsLike').textContent = 'Feels Like: ' + kToF(data.main.feels_like).toFixed(0) + '°F'
         document.getElementById('weatherDesc').textContent = 'Weather: ' + data.weather[0].description
