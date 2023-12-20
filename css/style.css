@@ -372,7 +372,7 @@ header nav a.active{
 }
 
 #projectMain article{
-    padding: 2%;
+    padding: 1.5%;
 }
 
 #projectMain section img{
@@ -410,21 +410,26 @@ header nav a.active{
     color: #FFF;
 }
 
-#projectMain section:nth-of-type(2) article:first-of-type{
+#projectMain section:nth-of-type(2) > article:first-of-type{
     background-color: #003F66;
     border-radius: 25px;
     box-shadow: 0 0 5px black;
-    width: 600px;
+    width: 650px;
+    margin-bottom: 50px;
 }
 
-#projectMain section:nth-of-type(2) article:first-of-type li{
+#projectMain section:nth-of-type(2) > article:first-of-type li{
     list-style-type: none;
-    margin-bottom: 2%;
+    border: 8px outset #000;
 }
 
-#projectMain section:nth-of-type(2) article:first-of-type a{
+#projectMain section:nth-of-type(2) > article:first-of-type li:not(:first-of-type):not(:last-of-type){
+    margin: 4% 0;
+}
+
+#projectMain section:nth-of-type(2) > article:first-of-type a{
     text-decoration: none;
-    color: hsl(140, 100%, 80%);
+    color: #99ffbb;
 }
 
 /* Custom PC Page */
