@@ -1,6 +1,9 @@
 // Variables for ease of access
 const username = 'clumsyproninja'
-const githubAPI = `https://api.github.com/users/${username}/repos`
+const githubAPI = `https://api.github.com/users/${username}/repos?timestamp=${Date.now()}`
+
+// Handle button
+document.getElementById('refresh').addEventListener('click', fetchRepos)
 
 // Function to fetch and display github repositories
 async function fetchRepos(){
@@ -9,6 +12,8 @@ async function fetchRepos(){
         const response = await fetch(githubAPI)
         const repos = await response.json()
         const reposList = document.getElementById('repos') // Element where repos will display
+
+        reposList.innerHTML = '' // Clear existing list
 
         // Loop through each repo and create elements to display them
         repos.forEach(repo => {
@@ -35,9 +40,10 @@ async function fetchRepos(){
             }
 
             // Add repo's last update
+            console.log('repos')
+            console.log('Last update: ', lastUpdate)
             repoInfo.innerHTML += `<span>Last Update: ${lastUpdate}</span>`
             li.appendChild(repoInfo)
-            
             reposList.appendChild(li)
         })
     } catch (error){
