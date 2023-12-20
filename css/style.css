@@ -91,19 +91,11 @@
     suffix: " ";
 }
 
-/* No category */
+/* Global html and body details */
 
 html, body{
     scroll-behavior: smooth;
     margin: 0;
-}
-
-#customPC-BGC{
-    background-color: #0A2938;
-}
-
-#customPCBG{
-    background-image: url(../assets/backgrounds/customPCBG.jpg);
 }
 
 /* Global Header */
@@ -372,33 +364,38 @@ header nav a.active{
     background-image: url(../assets/backgrounds/projectsBG.jpg);
 }
 
-#projectMain section:first-of-type{
-    background-color: #00263D;
+#projectMain section,
+#projectMain article{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#projectMain section:first-of-type img{
+#projectMain article{
+    padding: 2%;
+}
+
+#projectMain section img{
     padding: 20px 0 50px;
     height: 112px;
 }
 
+#projectMain section:first-of-type{
+    background-color: #00263D;
+}
+
 #projectMain section:first-of-type article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 800px;
-    padding: 2%;
     margin: 0 0 40px;
     color: #fff;
+    background-color: #004E57;
     border: 10px double;
     border-radius: 45px;
+    border-color: #002E33;
 }
 
 #projectMain section:first-of-type h1{
     font-size: 2.8em;
-    text-decoration: underline solid currentColor 5px;
 }
 
 #projectMain section:first-of-type p{
@@ -408,39 +405,20 @@ header nav a.active{
     text-align: center;
 }
 
-#projectMain section:first-of-type a{
-    background-color: #001929;
-    color: white;
-    font-family: 'Spinnaker', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    width: 20%;
-    margin: 30px;
-    padding: 20px;
-    border-radius: 25px;
-}
-
-#projectMain section:first-of-type article:first-of-type{
-    border-color: #002E33;
-    background-color: #004E57;
-}
-
-#projectMain section:first-of-type article:nth-of-type(2){
-    border-color: #203A60;
-    background-color: #A3C5f5;
-    color: #000 !important;
-}
-
-#projectMain section:first-of-type article:nth-of-type(2) h1{
-    text-shadow: none !important;
-}
-
-#projectMain section:first-of-type article:nth-of-type(3){
-    border-color: #061A2D;
-    background-color: #104070;
+#projectMain section:nth-of-type(2){
+    background-color: #067966;
+    color: #FFF;
 }
 
 /* Custom PC Page */
+
+#customPC-BGC{
+    background-color: #0A2938;
+}
+
+#customPCBG{
+    background-image: url(../assets/backgrounds/customPCBG.jpg);
+}
 
 #projectMain figure,
 #customPCBG{
