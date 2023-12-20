@@ -25,9 +25,9 @@ function validateForm(event){
     }
 
     if(formValid){
-        status.textContent = "Status: The form is VALID! Submitting...";
+        status.textContent = "Status: Successfully signed up!";
     } else{
-        status.textContent = "Status: The form is INVALID! ERRORS SOMEWHERE";
+        status.textContent = "Status: Invalid inputs. Please try again.";
     }
 }
 
