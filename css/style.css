@@ -216,7 +216,7 @@ header nav a.active{
     padding: 20px 5px 5px;
     font-family: "Karla", sans-serif;
     font-size: 2em;
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 0 0 10px #000;
     width: fit-content;
 }
 
@@ -376,8 +376,8 @@ header nav a.active{
 }
 
 #projectMain section img{
-    padding: 20px 0 50px;
-    height: 112px;
+    padding: 20px 0 30px;
+    height: 115px;
 }
 
 #projectMain section:first-of-type{
@@ -394,7 +394,7 @@ header nav a.active{
     border-color: #002E33;
 }
 
-#projectMain section:first-of-type h1{
+#projectMain section h1{
     font-size: 2.8em;
 }
 
@@ -408,6 +408,23 @@ header nav a.active{
 #projectMain section:nth-of-type(2){
     background-color: #067966;
     color: #FFF;
+}
+
+#projectMain section:nth-of-type(2) article:first-of-type{
+    background-color: #003F66;
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+    width: 600px;
+}
+
+#projectMain section:nth-of-type(2) article:first-of-type li{
+    list-style-type: none;
+    margin-bottom: 2%;
+}
+
+#projectMain section:nth-of-type(2) article:first-of-type a{
+    text-decoration: none;
+    color: hsl(140, 100%, 80%);
 }
 
 /* Custom PC Page */
