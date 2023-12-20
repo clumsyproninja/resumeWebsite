@@ -1,12 +1,12 @@
 // Variables for ease of access
 const username = 'clumsyproninja'
-const apiUrl = `https://api.github.com/users/${username}/repos`
+const githubAPI = `https://api.github.com/users/${username}/repos`
 
 // Function to fetch and display github repositories
 async function fetchRepos(){
     try{
         // Fetch data from GitHub API
-        const response = await fetch(apiUrl)
+        const response = await fetch(githubAPI)
         const repos = await response.json()
         const reposList = document.getElementById('repos') // Element where repos will display
 
