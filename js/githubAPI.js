@@ -2,9 +2,6 @@
 const username = 'clumsyproninja'
 const githubAPI = `https://api.github.com/users/${username}/repos`
 
-// Handle button
-document.getElementById('refresh').addEventListener('click', fetchRepos)
-
 // Function to fetch and display github repositories
 async function fetchRepos(){
     try{
@@ -26,6 +23,8 @@ async function fetchRepos(){
             // Modify and update the repo timestamps
             const lastDate = new Date(repo.updated_at)
             const lastUpdate = lastDate.toLocaleString('en-US', { timeZone: 'UTC'})
+            
+            // Debugging to check if dates match
             console.log(lastUpdate)
             console.log(repo.updated_at)
 
