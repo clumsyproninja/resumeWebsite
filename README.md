@@ -37,7 +37,7 @@ I am passionate about web development and aspire to become a versatile full-stac
 
 ### Resume
 
-You can find my detailed resume right [here!](resume/AMejiaTResume.pdf).
+You can find my detailed resume right [here!](resume/amt.pdf).
 
 ## PC Upgrade
 
