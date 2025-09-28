@@ -35,10 +35,6 @@ I am passionate about web development and aspire to become a versatile full-stac
 #### Project 3: [RockPaperTicTac](https://replit.com/@clumsy/RockpaperTictac)
 - In this program you can simultaneously play Rock Paper Scissors and Tic Tac Toe!
 
-### Resume
-
-You can find my detailed resume right [here!](resume/amt.pdf).
-
 ## PC Upgrade
 
 I recently upgraded my PC setup to enhance my development experience. Here are the key components:
